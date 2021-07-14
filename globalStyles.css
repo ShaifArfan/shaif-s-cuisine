@@ -1,3 +1,6 @@
+html {
+	font-size: 10px;
+}
 section {
 	padding: 100px 0;
 }
@@ -5,4 +8,14 @@ section {
 	max-width: 1200px;
 	width: 90%;
 	margin: 0 auto;
+}
+:root {
+	--green-1: #26643b;
+	--green-2: #a2de96;
+	--lightGreen-1: #d6e5d8;
+	--lightGreen-2: #f5fcf4;
+	--black-1: #3b413a;
+	--black-2: #3f3c3c;
+	--black-3: #5b6359;
+	--white-1: #e8e8e8;
 }
