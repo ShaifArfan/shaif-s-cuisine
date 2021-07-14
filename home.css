@@ -1,0 +1,11 @@
+#hero .hero__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#hero .hero__left {
+	flex: 1;
+}
+#hero .hero__right {
+	flex: 1;
+}
