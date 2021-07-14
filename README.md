@@ -28,6 +28,9 @@ Here are the some rules for other team members to contribute:
 </section>
 ```
 
+- Only use Global color variables for colors
+- Use rem/em unites instead px
+
 Further rules will be added here.
 
 Happy Coding!
