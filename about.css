@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;600&display=swap');
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+body{
+    background: var(--lightGreen-2);
+}
+
+/* story style */
+#story .story__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#story .story__left{
+    flex: 3;
+    padding-right: 2rem;
+}
+#story .story__right{
+    flex: 4;
+}
+#story .story__heading,
+#goals .goals__heading{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    color: var(--black-1);
+}
+#story .story__subheading{
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--black-1);
+}
+#story .story__info,
+#goals .goals__info{
+    font-family: Raleway;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: var(--black-3);
+}
+
+#goals .goals__info,
+#goals .goals__heading{
+    text-align: center;
+}
+
+#goals .goals__info{
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* img section */
+#aboutImg .aboutImg__wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row: auto;
+    gap: 2rem
+}
+#aboutImg .aboutImg__img1{
+    grid-row: 1/end;
+}
+@media only screen and (max-width: 768px){
+    #story .story__wrapper{
+        flex-direction: column;
+    }
+    #story .story__left{
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    #story .story__heading,
+    #goals .goals__heading{
+        font-family: 2rem;
+    }
+    #story .story__subheading{
+        font-size: 1.4rem;
+    }
+    #story .story__info,
+    #goals .goals__info{
+        font-size: 1.4rem;
+    }
+}
