@@ -1,0 +1,18 @@
+.btn {
+	color: var(--green-1);
+	font-family: Poppins;
+	font-weight: 500;
+	border-radius: 8px;
+	font-size: 1.4rem;
+	padding: 1.2rem 2rem;
+}
+.primary-btn {
+	color: var(--white-1);
+	background: var(--green-1);
+}
+@media only screen and (min-width: 700px) {
+	.btn {
+		padding: 1.3rem 2rem;
+		font-size: 2rem;
+	}
+}
