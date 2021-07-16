@@ -224,7 +224,7 @@
 
 /* Top Dishes */
 .topDishes__title {
-	font-size: 2.4rem;
+	font-size: 1.8rem;
 	margin-bottom: 2rem;
 	font-weight: 600;
 }
@@ -267,6 +267,9 @@
 	width: fit-content;
 }
 @media only screen and (min-width: 768px) {
+	.topDishes__title {
+		font-size: 2.4rem;
+	}
 	.dishGrid__wrapper {
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		gap: 3rem;
@@ -286,3 +289,97 @@
 	}
 }
 /* End Top Dishes */
+
+/* Discount Styles */
+.discount__wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	border-radius: 12px;
+	background: var(--lightGreen-1) url(./images/discount-illustration.png)
+		no-repeat bottom right / 100px;
+}
+.discount__images {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+.discount__img1 {
+	flex: 2;
+}
+.discount__img2 {
+	flex: 3;
+}
+.discount__images img {
+	object-fit: cover;
+	border-radius: 12px;
+}
+.discount__text {
+	font-size: 1.4rem;
+	font-weight: 900;
+	color: var(--green-1);
+	margin-bottom: 0.5rem;
+}
+.discount__title {
+	font-size: 1.8rem;
+	color: var(--black-1);
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.discount__price {
+	font-size: 1.4rem;
+	font-weight: 600;
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+.discount__oldPrice {
+	color: var(--black-2);
+	text-decoration: line-through;
+}
+.discount__newPrice {
+	color: var(--green-1);
+}
+.discount__stars {
+	width: fit-content;
+	height: 15px;
+	margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+	.discount__wrapper {
+		flex-direction: row;
+		gap: 2rem;
+		padding: 2rem;
+		align-items: center;
+		background-size: 150px;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.discount__images {
+		flex: 1;
+		margin-bottom: 0;
+	}
+	.discount__img1,
+	.discount__img2 {
+		flex: 1;
+		height: 300px;
+	}
+	.discount__info {
+		flex: 1;
+	}
+	.discount__text {
+		font-size: 2.4rem;
+	}
+	.discount__title {
+		font-size: 3.6rem;
+		margin-bottom: 2rem;
+	}
+	.discount__price {
+		font-size: 2.4rem;
+	}
+	.discount__stars {
+		height: 25px;
+	}
+}
+/* End Discount Styles */
