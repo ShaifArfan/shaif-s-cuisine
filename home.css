@@ -159,7 +159,7 @@
 }
 .ourSpecials__item__stars {
 	height: 1.5rem;
-	width: fit-content;
+	width: max-content;
 	margin-bottom: 1rem;
 }
 .ourSpecials__item__text {
@@ -264,7 +264,7 @@
 }
 .dishGrid__item__stars {
 	max-height: 15px;
-	width: fit-content;
+	width: max-content;
 }
 @media only screen and (min-width: 768px) {
 	.topDishes__title {
@@ -342,7 +342,7 @@
 	color: var(--green-1);
 }
 .discount__stars {
-	width: fit-content;
+	width: max-content;
 	height: 15px;
 	margin-bottom: 1rem;
 }
