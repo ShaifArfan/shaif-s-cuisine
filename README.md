@@ -1,6 +1,6 @@
 # Shaif's Cuisine
 
-A community project <br>
+**A HTML CSS Project**. Mede with ♥ by web cifar community <br>
 live Preview: [Click Me](http://shaif-s-cuisine.netlify.app)
 
 ![](./readmeImg/banner.png)
