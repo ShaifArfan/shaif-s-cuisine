@@ -1,3 +1,96 @@
+/* Nav Styles */
+.nav {
+	padding: 2rem 0;
+}
+.nav__icon,
+.nav__close {
+	display: none;
+}
+.nav__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.nav__list li {
+	display: inline-block;
+	margin: 0 1rem;
+}
+.nav__list .nav__link {
+	font-size: 1.8rem;
+	font-family: Poppins;
+	color: var(--black-2);
+	padding: 0.5rem;
+}
+.nav__list li:hover .nav__link {
+	color: var(--green-1);
+}
+@media only screen and (max-width: 768px) {
+	.nav {
+		position: relative;
+		/* overflow-x: scroll; */
+	}
+	.nav__icon {
+		display: block;
+	}
+	.nav__icon svg {
+		pointer-events: none;
+		height: 30px;
+		width: 30px;
+	}
+	.nav__close {
+		display: block;
+		position: absolute;
+		color: var(--black-1);
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+		cursor: pointer;
+	}
+	.nav__close svg {
+		width: 30px;
+		height: 30px;
+		pointer-events: none;
+	}
+	.nav__list {
+		z-index: 1000;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100vh;
+		width: 80%;
+		background: var(--lightGreen-1);
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding-right: 2rem;
+		transform: translate(100%);
+		overflow: hidden;
+		transition: 0.3s ease-in transform;
+	}
+	.nav__list.show {
+		transform: translate(0);
+	}
+	.nav__list li {
+		display: block;
+		text-align: right;
+		margin-bottom: 2rem;
+	}
+	.nav__list a {
+		font-size: 1.6rem;
+	}
+	.nav__bgOverlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		width: 100%;
+		background: rgba(18, 24, 14, 0.808);
+		display: none;
+	}
+	.nav__bgOverlay.active {
+		display: block;
+	}
+}
+/* End Nav Styles */
 /* Global Button Styles */
 .btn {
 	color: var(--green-1);
