@@ -6,12 +6,12 @@ const navBgOverlayEl = document.querySelector('.nav__bgOverlay');
 navIconEl.addEventListener('click', () => {
   navList.classList.add('show');
   navBgOverlayEl.classList.add('active');
-  document.body.style= 'height: 100vh; overflow:hidden;';
+  document.body.style= 'height: 100vh; width:100vw; overflow:hidden;';
 });
 
 navCloseEl.addEventListener('click', () => {
   navList.classList.remove('show');
   navBgOverlayEl.classList.remove('active');
-  document.body.style= 'height: initial; overflow: initial;';
+  document.body.style= 'height: initial; width: 100%; overflow-x: hidden;';
 });
 

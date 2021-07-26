@@ -5,6 +5,7 @@ html {
 }
 body {
 	background: var(--lightGreen-2);
+	overflow-x: hidden;
 }
 section {
 	padding: 100px 0;
