@@ -360,7 +360,8 @@ footer {
 	font-weight: 500;
 }
 .form__group input,
-.form__group textarea {
+.form__group textarea,
+.form__group select {
 	width: 100%;
 	border: none;
 	background-color: var(--lightGreen-1);
@@ -371,6 +372,9 @@ footer {
 	border-radius: 8px;
 	margin-top: 0.5rem;
 	color: var(--black-2);
+}
+.form__group textarea {
+	resize: vertical;
 }
 .form__wrapper button[type='submit'] {
 	width: fit-content;
@@ -396,7 +400,8 @@ footer {
 		font-size: 1.8rem;
 	}
 	.form__group input,
-	.form__group textarea {
+	.form__group textarea,
+	.form__group select {
 		font-size: 1.8rem;
 		padding: 2rem;
 		margin-top: 1.5rem;
