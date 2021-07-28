@@ -377,7 +377,7 @@ footer {
 	resize: vertical;
 }
 .form__wrapper button[type='submit'] {
-	width: min-content;
+	width: max-content;
 	border: none;
 	padding: 1rem 4rem;
 	font-weight: 500;
