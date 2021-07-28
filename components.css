@@ -53,7 +53,7 @@
 	.nav__list {
 		z-index: 1000;
 		position: absolute;
-		right: 0;
+		left: 100%;
 		top: 0;
 		height: 100vh;
 		width: 80%;
@@ -62,12 +62,12 @@
 		align-items: center;
 		justify-content: flex-end;
 		padding-right: 2rem;
-		transform: translate(100%);
+		transform: translate(0%);
 		overflow: hidden;
 		transition: 0.3s ease-in transform;
 	}
 	.nav__list.show {
-		transform: translate(0);
+		transform: translate(-100%);
 	}
 	.nav__list li {
 		display: block;
@@ -111,6 +111,59 @@
 	}
 }
 /* End Global Button Styles */
+
+/* Store info section styles*/
+.storeInfo__wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.storeInfo__item {
+	background-color: var(--lightGreen-1);
+	padding: 20px 30px;
+	text-align: center;
+	text-align: center;
+	border-radius: 12px;
+	width: 150px;
+}
+.storeInfo__icon {
+	width: 30px;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+}
+.storeInfo__title {
+	font-size: 1.4rem;
+	font-family: Poppins;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+	color: var(--black-1);
+}
+.storeInfo__text {
+	font-size: 1.4rem;
+	font-family: Raleway;
+	color: var(--black-2);
+}
+@media only screen and (min-width: 768px) {
+	.storeInfo__wrapper {
+		gap: 2rem;
+	}
+	.storeInfo__item {
+		min-width: 200px;
+		padding: 40px 0;
+	}
+	.storeInfo__icon {
+		width: 47px;
+		margin-bottom: 2.5rem;
+	}
+	.storeInfo__title {
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+	.storeInfo__text {
+		font-size: 1.6rem;
+	}
+}
 
 /* Dishes Grid */
 .dishGrid__title {
@@ -282,3 +335,70 @@ footer {
 	}
 }
 /* End Footer Styles */
+
+/* Form Styles */
+#form {
+	padding: 5rem 0;
+}
+.form__title {
+	font-size: 1.8rem;
+	color: var(--black-1);
+	font-weight: 600;
+}
+.form__wrapper {
+	padding: 3rem 0;
+}
+.form__wrapper form {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+}
+.form__group label {
+	font-size: 1.6rem;
+	font-family: Poppins;
+	color: var(--black-2);
+	font-weight: 500;
+}
+.form__group input,
+.form__group textarea {
+	width: 100%;
+	border: none;
+	background-color: var(--lightGreen-1);
+	font-size: 1.4rem;
+	font-family: Raleway;
+	font-weight: 600;
+	padding: 1.5rem;
+	border-radius: 8px;
+	margin-top: 0.5rem;
+	color: var(--black-2);
+}
+.form__wrapper button[type='submit'] {
+	width: fit-content;
+	border: none;
+	padding: 1rem 4rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+}
+@media only screen and (min-width: 768px) {
+	.form__title {
+		font-size: 3.6rem;
+	}
+	.form__wrapper {
+		padding: 5rem 0;
+	}
+	.form__wrapper form {
+		grid-template-columns: 1fr 1fr;
+	}
+	.form__group__full {
+		grid-column: 1/3;
+	}
+	.form__group label {
+		font-size: 1.8rem;
+	}
+	.form__group input,
+	.form__group textarea {
+		font-size: 1.8rem;
+		padding: 2rem;
+		margin-top: 1.5rem;
+	}
+}

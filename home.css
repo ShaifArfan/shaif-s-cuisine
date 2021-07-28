@@ -70,58 +70,6 @@
 		flex: 1;
 	}
 }
-/* Store info section styles*/
-.storeInfo__wrapper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 1rem;
-}
-.storeInfo__item {
-	background-color: var(--lightGreen-1);
-	padding: 20px 30px;
-	text-align: center;
-	text-align: center;
-	border-radius: 12px;
-	width: 150px;
-}
-.storeInfo__icon {
-	width: 30px;
-	margin: 0 auto;
-	margin-bottom: 1.5rem;
-}
-.storeInfo__title {
-	font-size: 1.4rem;
-	font-family: Poppins;
-	font-weight: 500;
-	margin-bottom: 0.5rem;
-	color: var(--black-1);
-}
-.storeInfo__text {
-	font-size: 1.4rem;
-	font-family: Raleway;
-	color: var(--black-2);
-}
-@media only screen and (min-width: 768px) {
-	.storeInfo__wrapper {
-		gap: 2rem;
-	}
-	.storeInfo__item {
-		min-width: 200px;
-		padding: 40px 0;
-	}
-	.storeInfo__icon {
-		width: 47px;
-		margin-bottom: 2.5rem;
-	}
-	.storeInfo__title {
-		font-size: 1.8rem;
-		margin-bottom: 1rem;
-	}
-	.storeInfo__text {
-		font-size: 1.6rem;
-	}
-}
 /* Our Specials Section Styles */
 #ourSpecials {
 	padding-top: 10rem;
