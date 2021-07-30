@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Add your custom css -->
 </head>
 
@@ -56,26 +59,26 @@
   </div>
   <!-- End Nav Section -->
   <!-- Booking Section -->
-  <section id="form">
+  <section id="form" data-aos="fade-up">
     <div class="container">
       <h3 class="form__title">Book Table</h3>
       <div class="form__wrapper">
         <form name="booking" method="POST" netlify>
           <div class="form__group">
             <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="First Name">
+            <input type="text" id="firstName" name="First Name" required>
           </div>
           <div class="form__group">
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="Last Name">
+            <input type="text" id="lastName" name="Last Name" required>
           </div>
           <div class="form__group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="Email">
+            <input type="email" id="email" name="Email" required>
           </div>
           <div class="form__group">
             <label for="tableType">Table Type</label>
-            <select name="Table Type" id="tableType">
+            <select name="Table Type" id="tableType" required>
               <option selected disabled>Choose</option>
               <option value="small">Small(2 persons)</option>
               <option value="medium">Small(4 persons)</option>
@@ -84,7 +87,7 @@
           </div>
           <div class="form__group">
             <label for="guestNumber">Guest Number</label>
-            <input type="number" id="guestNumber" name="Guest Number" min="1" max="10">
+            <input type="number" id="guestNumber" name="Guest Number" min="1" max="10" required>
           </div>
           <div class="form__group">
             <label for="placement">Placement</label>
@@ -97,11 +100,11 @@
           </div>
           <div class="form__group">
             <label for="date">Date</label>
-            <input type="date" id="date" name="Date">
+            <input type="date" id="date" name="Date" required>
           </div>
           <div class="form__group">
             <label for="time">time</label>
-            <input type="time" id="time" name="Time">
+            <input type="time" id="time" name="Time" required>
           </div>
           <div class="form__group form__group__full">
             <label for="note">Note</label>
@@ -228,7 +231,10 @@
     </div>
   </div>
   <!-- End Footer -->
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./main.js"></script>
   <script src="./main.js"></script>
 </body>
 

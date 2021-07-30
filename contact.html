@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Add your custom css -->
 </head>
 
@@ -56,7 +59,7 @@
   </div>
   <!-- End Nav Section -->
   <!-- Store Info Section -->
-  <section id="storeInfo">
+  <section id="storeInfo" data-aos="fade-up">
     <div class="container">
       <div class="storeInfo__wrapper">
         <div class="storeInfo__item">
@@ -97,7 +100,7 @@
   </section>
   <!-- End Store Info Section -->
   <!-- Contact Form Section -->
-  <section id="form">
+  <section id="form" data-aos="fade-down">
     <div class="container">
       <h3 class="form__title">
         Contact & Inquiry
@@ -106,23 +109,23 @@
         <form name="contact" method="POST" netlify>
           <div class="form__group">
             <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="First Name">
+            <input type="text" id="firstName" name="First Name" required>
           </div>
           <div class="form__group">
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="Last Name">
+            <input type="text" id="lastName" name="Last Name" required>
           </div>
           <div class="form__group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="Email">
+            <input type="email" id="email" name="Email" required>
           </div>
           <div class="form__group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="Subject">
+            <input type="text" id="subject" name="Subject" required>
           </div>
           <div class="form__group form__group__full">
             <label for="message">Message</label>
-            <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+            <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
           </div>
           <button type="submit" class="btn primary-btn">Send</button>
         </form>
@@ -245,7 +248,10 @@
     </div>
   </div>
   <!-- End Footer -->
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./main.js"></script>
   <script src="./main.js"></script>
 </body>
 
