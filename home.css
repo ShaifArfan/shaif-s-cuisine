@@ -95,6 +95,12 @@
 .ourSpecials__item__img {
 	margin-top: calc(-50% - 2rem);
 	margin-bottom: 2rem;
+	border-radius: 12px;
+	height: 150px;
+	overflow: hidden;
+}
+.ourSpecials__item__img img {
+	object-fit: cover;
 }
 .ourSpecials__item__title {
 	font-size: 1.4rem;
@@ -238,23 +244,25 @@
 	height: 15px;
 	margin-bottom: 1rem;
 }
+
 @media only screen and (min-width: 768px) {
 	.discount__wrapper {
 		flex-direction: row;
-		gap: 2rem;
+		gap: 4rem;
 		padding: 2rem;
 		align-items: center;
 		background-size: 150px;
-		max-width: 900px;
+		/* max-width: 900px; */
 		margin: 0 auto;
 	}
 	.discount__images {
-		flex: 4;
+		flex: 5;
 		margin-bottom: 0;
 		gap: 2rem;
 	}
 	.discount__img1,
-	.discount__img2 {
+	.discount__img2,
+	.discount__img3 {
 		flex: 1;
 		height: 350px;
 	}
@@ -274,6 +282,14 @@
 	.discount__stars {
 		height: 20px;
 		margin-bottom: 2rem;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.discount__wrapper {
+		gap: 2rem;
+	}
+	.discount__img3 {
+		display: none;
 	}
 }
 /* End Discount Styles */

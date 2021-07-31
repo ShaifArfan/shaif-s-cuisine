@@ -32,6 +32,7 @@
 	max-width: 400px;
 }
 .ourSpecials__item {
+	flex: 1;
 	display: flex;
 	gap: 2rem;
 	background-color: var(--lightGreen-1);
