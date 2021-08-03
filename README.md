@@ -41,10 +41,6 @@ See `contributors` branch for ways to get started.
 
 ## FAQ
 
-### Can i use this website?
-
-This project is made for only educational pupose. The authority and team members have only right to use it for commercial case. Otherwise it's always free for educational purpose.
-
 ### How can i get started?
 
 You can get started by following the YouTube tutorial of this project. Here is the full tutorial video link: [coming soon].
@@ -52,6 +48,10 @@ You can get started by following the YouTube tutorial of this project. Here is t
 ### What i need to start the project?
 
 Just open your favorite code editor and follow along with the `YouTube Tutorial`[coming soon].
+
+### Who the project is for?
+
+The project is for the people who wanna get more skilled in HTML & CSS.
 
 ## Similar Projects
 
