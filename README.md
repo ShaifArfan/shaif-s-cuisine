@@ -53,9 +53,9 @@ You can get started by following the YouTube tutorial of this project. Here is t
 
 Just open your favorite code editor and follow along with the `YouTube Tutorial`[coming soon].
 
-## Similer Projects
+## Similar Projects
 
-Here are some Similer projects that you might be interested.
+Here are some Similar projects that you might be interested.
 
 - [Amy's Portfolio - HTML, CSS Project](https://github.com/ShaifArfan/AMYs-Portfolio)
 - [Ayan's Portfolio - React JS Project](https://github.com/ShaifArfan/AYANs-portfolio)
