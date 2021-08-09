@@ -32,7 +32,8 @@
 	.nav__icon {
 		display: block;
 	}
-	.nav__icon svg {
+	.nav__icon svg,
+	.nav__close svg {
 		pointer-events: none;
 		height: 30px;
 		width: 30px;
@@ -41,15 +42,9 @@
 		display: block;
 		position: absolute;
 		color: var(--black-1);
-		position: absolute;
 		right: 1rem;
 		top: 1rem;
 		cursor: pointer;
-	}
-	.nav__close svg {
-		width: 30px;
-		height: 30px;
-		pointer-events: none;
 	}
 	.nav__list {
 		z-index: 1000;
