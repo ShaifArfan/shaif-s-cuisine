@@ -54,7 +54,7 @@ You can get started by following the YouTube tutorial of this project. Here is t
 
 ### What i need to start the project?
 
-Just open your favorite code editor and follow along with the `YouTube Tutorial`[coming soon].
+Just open your favorite code editor and follow along with the [YouTube Tutorial](https://youtu.be/4y-_3Ayiauw).
 
 ### Who the project is for?
 
