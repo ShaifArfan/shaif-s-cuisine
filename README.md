@@ -5,7 +5,7 @@ live Preview: [Click Me](http://shaif-s-cuisine.netlify.app)
 
 ![](./readmeImg/banner.png)
 
-## Developer teams of Shaif's Cuisine
+## Developer team of Shaif's Cuisine
 
 1. Shaif Arfan
 1. Anwar saeed
